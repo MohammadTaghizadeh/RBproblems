@@ -19,6 +19,6 @@ ptmatrix <- function(ptfn){
 
 ## Short R code for pascal triangle
 short_code_pascal_triangle <- function(pt){
-  sapply(0:pt, FUN = function(x)choose(x, 0:x))
+  lapply(0:pt, FUN = function(x)choose(x, 0:x))
 }
 
