@@ -1,4 +1,6 @@
 # RBproblems
+![fibo_3D_4](https://user-images.githubusercontent.com/66325392/214049388-f670db01-b0ac-4873-bbbf-d02b4e82af52.jpg)
+
 RBproblems: It stands for "R for basic problems".   
 In this R package there are folowing functions:
 
