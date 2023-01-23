@@ -22,3 +22,22 @@ short_code_pascal_triangle <- function(pt){
   lapply(0:pt, FUN = function(x)choose(x, 0:x))
 }
 
+
+fibonacci <- function(fa, fb){
+  x <- c(1,1)
+  for (i in 1:fb) {
+    x[length(x)+1] <- sum(x[length(x)-1], x[length(x)])
+  }
+  x[fa:fb]
+}
+
+
+fibonacci_2D <- function(rf2D, cf2D){
+  a <- 1
+  b <- cf2D
+  c <- rf2D
+  d <- (b-a)+c
+  mapply(a:b, c:d, FUN = function(x,y)fibonacci(x,y))
+}
+
+
